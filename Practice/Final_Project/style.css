@@ -1,58 +1,128 @@
 /* 
-   Это ГЛАВНЫЙ файл стилей.
-   Все, что ты напишешь здесь, применится ко ВСЕМ страницам (index.html и hobby.html).
+╔════════════════════════════════════════════════════════════════╗
+║           🎨 СТИЛИ ФИНАЛЬНОГО ПРОЕКТА 🎨                      ║
+╚════════════════════════════════════════════════════════════════╝
+
+Это твой главный файл стилей!
+Здесь ты можешь использовать всё, чему научился:
+
+✅ ЧЕКЛИСТ:
+- [ ] Подключить Google Fonts
+- [ ] Настроить цвета и фоны
+- [ ] Стили для шрифтов
+- [ ] Box Model (padding, margin, border)
+- [ ] Flexbox для макета
+- [ ] Hover-эффекты (transition)
+- [ ] Анимации (@keyframes)
+
+Удачи! 🚀
 */
 
+/* === СБРОС СТИЛЕЙ === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === ОСНОВНЫЕ СТИЛИ === */
 body {
-    font-family: sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* Добавь свой фон и цвет текста */
 }
 
-/* Стили для меню */
-.menu {
-    background-color: #333;
-    padding: 15px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* === ШАПКА === */
+header {
+    /* Добавь фон */
 }
 
-.menu-item {
-    color: white;
-    text-decoration: none; /* Без подчеркивания */
-    font-size: 18px;
+nav {
+    /* Используй display: flex для навигации */
+    /* justify-content: space-between */
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: 0.3s;
 }
 
-.menu-item:hover {
-    background-color: #ff5722; /* Оранжевый при наведении */
+.menu {
+    list-style: none;
+    /* display: flex для горизонтального меню */
 }
 
-/* Стили для фото */
-.avatar {
-    width: 200px;
-    height: 200px; /* Чтобы был квадрат */
-    border-radius: 50%; /* Чтобы был круг */
-    border: 5px solid white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+.menu li {
+    /* margin для отступов */
 }
 
-/* Стили для контента */
+.menu a {
+    text-decoration: none;
+    /* padding, color, transition */
+}
+
+.menu a:hover {
+    /* hover-эффект */
+}
+
+/* === HERO-СЕКЦИЯ === */
+.hero {
+    /* Большой блок с приветствием */
+    /* text-align: center */
+    /* padding */
+}
+
+.hero h1 {
+    /* Большой красивый заголовок */
+    /* font-size, color, text-shadow */
+}
+
+/* === КОНТЕНТ === */
 .content {
-    background-color: white;
-    max-width: 800px;
-    margin: 0 auto; /* По центру */
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    /* padding */
+    /* max-width и margin: 0 auto для центрирования */
 }
 
-h1 {
-    color: #3f51b5;
+/* === КАРТОЧКИ (если есть) === */
+.cards {
+    /* display: flex */
+    /* gap */
+    /* flex-wrap: wrap */
 }
+
+.card {
+    /* background */
+    /* padding */
+    /* border-radius */
+    /* box-shadow */
+    /* transition для hover-эффекта */
+}
+
+.card:hover {
+    /* transform: translateY(-10px) */
+    /* box-shadow увеличить */
+}
+
+/* === ПОДВАЛ === */
+footer {
+    /* background */
+    /* color */
+    /* text-align: center */
+    /* padding */
+}
+
+/* === АНИМАЦИИ === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Пример использования: animation: fadeIn 0.5s ease; */

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Макет на Flexbox</title>
+    <style>
+        /* 
+        ╔════════════════════════════════════════════════════════════════╗
+        ║           🚀 САМОСТОЯТЕЛЬНАЯ РАБОТА - УРОК 8 🚀                ║
+        ║                    "Макет на Flexbox"                         ║
+        ╚════════════════════════════════════════════════════════════════╝
+        
+        ✅ ТВОЁ ЗАДАНИЕ:
+        
+        Создай страницу с навигацией и карточками, используя Flexbox!
+        
+        1. Шапка: логотип слева, меню справа (justify-content: space-between)
+        2. 3 карточки в ряд (display: flex на контейнере)
+        3. Равные отступы между карточками (gap)
+        4. Центрирование контента
+        
+        💡 ПОДСКАЗКИ:
+        - display: flex;
+        - justify-content: space-between / center / space-around;
+        - align-items: center;
+        - gap: 20px;
+        - flex-wrap: wrap; (для переноса на маленьких экранах)
+        
+        ⭐ БОНУС: Сделай подвал сайта (footer)!
+        */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            /* Сделай flex-контейнер */
+            background: #333;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            /* Сделай flex для меню */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .cards-container {
+            /* Сделай flex-контейнер для карточек */
+            padding: 30px;
+        }
+
+        .card {
+            /* Стили карточки */
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">🚀 MySite</div>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Карточка 1</h3>
+                <p>Описание первой карточки.</p>
+            </div>
+            <div class="card">
+                <h3>Карточка 2</h3>
+                <p>Описание второй карточки.</p>
+            </div>
+            <div class="card">
+                <h3>Карточка 3</h3>
+                <p>Описание третьей карточки.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

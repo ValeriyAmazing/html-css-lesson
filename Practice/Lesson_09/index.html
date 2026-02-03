@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Анимированные карточки</title>
+    <style>
+        /* 
+        ╔════════════════════════════════════════════════════════════════╗
+        ║           🚀 САМОСТОЯТЕЛЬНАЯ РАБОТА - УРОК 9 🚀                ║
+        ║                 "Анимированные карточки"                      ║
+        ╚════════════════════════════════════════════════════════════════╝
+        
+        ✅ ТВОЁ ЗАДАНИЕ:
+        
+        Добавь анимации и переходы к элементам!
+        
+        1. Плавное увеличение карточки при наведении (transform + transition)
+        2. Создай вращающийся спиннер загрузки (@keyframes)
+        3. Сделай пульсирующую кнопку
+        4. Анимированный градиентный фон
+        
+        💡 ПОДСКАЗКИ:
+        - transition: all 0.3s ease;
+        - transform: scale(1.1);
+        - @keyframes имя { from {} to {} }
+        - animation: имя 1s ease infinite;
+        
+        ⭐ БОНУС: Сделай несколько анимаций одновременно!
+        */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a2e;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .card {
+            width: 200px;
+            height: 150px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+
+            /* Добавь transition! */
+        }
+
+        .card:hover {
+            /* Добавь transform и box-shadow */
+        }
+
+        /* Создай анимацию для спиннера */
+        @keyframes spin {
+            /* от 0deg к 360deg */
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-top-color: #64ffc8;
+            border-radius: 50%;
+
+            /* Добавь animation! */
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background: #ff6b8a;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+
+            /* Добавь transition и animation (пульсация) */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">Наведи на меня!</div>
+
+    <div class="spinner"></div>
+
+    <button class="btn">Пульсирующая кнопка</button>
+
+</body>
+
+</html>

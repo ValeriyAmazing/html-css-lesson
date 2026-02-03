@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Анимированные карточки - Решение</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        /* Карточка с hover-эффектом */
+        .card {
+            width: 250px;
+            height: 180px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card:hover {
+            transform: translateY(-15px) scale(1.05) rotate(2deg);
+            box-shadow:
+                0 25px 50px rgba(102, 126, 234, 0.4),
+                0 0 30px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Спиннер */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(255, 255, 255, 0.1);
+            border-top-color: #64ffc8;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Пульсирующая кнопка */
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 107, 138, 0.7);
+            }
+
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 20px rgba(255, 107, 138, 0);
+            }
+        }
+
+        .btn {
+            padding: 18px 40px;
+            background: linear-gradient(135deg, #ff6b8a, #ff8fab);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+
+            transition: all 0.3s ease;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #ff8fab, #ffb4c4);
+            animation: none;
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(255, 107, 138, 0.5);
+        }
+
+        /* Градиентный блок */
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .gradient-box {
+            width: 300px;
+            height: 100px;
+            background: linear-gradient(90deg, #ff6b8a, #ffd93d, #64ffc8, #4da6ff, #ff6b8a);
+            background-size: 400% 400%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+            animation: gradient 5s ease infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">✨ Наведи на меня!</div>
+
+    <div class="spinner"></div>
+
+    <button class="btn">🎯 Пульсирующая кнопка</button>
+
+    <div class="gradient-box">🌈 Анимированный градиент</div>
+
+</body>
+
+</html>

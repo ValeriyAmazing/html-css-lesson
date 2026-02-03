@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Карточки товаров - Решение</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .cards-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            width: 260px;
+            padding: 30px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-image {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .old-price {
+            font-size: 16px;
+            color: #999;
+            text-decoration: line-through;
+            margin-right: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🛒 Наши товары</h1>
+
+    <div class="cards-container">
+        <div class="card">
+            <div class="card-image"></div>
+            <h3>Супер гаджет</h3>
+            <p>Описание товара. Очень крутой гаджет для разных полезных штук!</p>
+            <p>
+                <span class="old-price">1500 ₴</span>
+                <span class="price">1000 ₴</span>
+            </p>
+            <button class="btn">Купить</button>
+        </div>
+
+        <div class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #ff6b8a, #ffa500);"></div>
+            <h3>Мега устройство</h3>
+            <p>Ещё один замечательный товар с классными характеристиками.</p>
+            <p class="price">1500 ₴</p>
+            <button class="btn">Купить</button>
+        </div>
+
+        <div class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #64ffc8, #4da6ff);"></div>
+            <h3>Премиум штука</h3>
+            <p>Самый крутой товар в нашем магазине. Только для избранных!</p>
+            <p class="price">2000 ₴</p>
+            <button class="btn">Купить</button>
+        </div>
+    </div>
+</body>
+
+</html>
