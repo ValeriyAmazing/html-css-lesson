@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 4: Волшебные Ссылки 🔗</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #f3e5f5;
+            /* Purple 50 */
+            color: #4a148c;
+            /* Purple 900 */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 5px solid #ab47bc;
+        }
+
+        h1 {
+            color: #8e24aa;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        h2 {
+            color: #6a1b9a;
+            border-bottom: 2px dotted #6a1b9a;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .code-block {
+            background-color: #263238;
+            color: #eceff1;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1em;
+            margin: 20px 0;
+            border-left: 10px solid #ce93d8;
+        }
+
+        .tag {
+            color: #f48fb1;
+        }
+
+        .attr {
+            color: #80cbc4;
+        }
+
+        .val {
+            color: #fff59d;
+        }
+
+        a {
+            color: #d81b60;
+            text-decoration: none;
+            border-bottom: 2px solid #d81b60;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #d81b60;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .task {
+            background-color: #ede7f6;
+            border: 2px solid #b39ddb;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔗 Урок 4: Ссылки</h1>
+
+        <p>Представь, что ты волшебник и можешь создать портал в любую точку мира. В интернете такие порталы называются
+            <b>ссылками</b>.</p>
+
+        <h2>⚓ Тег A (Якорь)</h2>
+        <p>Ссылка создается тегом <b>&lt;a&gt;</b> (от слова Anchor - Якорь).</p>
+        <p>Самое главное у неё — это адрес <b>href</b> (куда мы летим?).</p>
+
+        <div class="code-block">
+            &lt;<span class="tag">a</span> <span class="attr">href</span>=<span
+                class="val">"https://google.com"</span>&gt;Полетели в Гугл!&lt;/<span class="tag">a</span>&gt;
+        </div>
+
+        <p>А если ты хочешь, чтобы ссылка открылась в новой вкладке (не закрывая твою страницу), добавь
+            <code>target="_blank"</code>:</p>
+
+        <div class="code-block">
+            &lt;<span class="tag">a</span> <span class="attr">href</span>=<span class="val">"..."</span> <span
+                class="attr">target</span>=<span class="val">"_blank"</span>&gt;Новая вкладка&lt;/<span
+                class="tag">a</span>&gt;
+        </div>
+
+        <h2>📂 Ссылки на свои файлы</h2>
+        <p>Ты можешь ссылаться не только на интернет, но и на свои соседние файлы!</p>
+        <p>Если у тебя рядом лежит файл <b>game.html</b>, просто напиши:</p>
+
+        <div class="code-block">
+            &lt;<span class="tag">a</span> <span class="attr">href</span>=<span class="val">"game.html"</span>&gt;Моя
+            игра&lt;/<span class="tag">a</span>&gt;
+        </div>
+
+        <div class="task">
+            <h3>🚀 Твоё задание №4: Сборник ссылок</h3>
+            <p>1. Открой папку <b>Practice/Lesson_04</b>.</p>
+            <p>2. В файле <b>portal.html</b> создай список своих любимых сайтов (YouTube, Roblox, Minecraft Wiki).</p>
+            <p>3. <b>Бонус:</b> Попробуй сделать ссылку на свою работу из Урока 3! (Подсказка: нужно знать путь к файлу.
+                Если сложно — спроси учителя!).</p>
+        </div>
+    </div>
+</body>
+
+</html>

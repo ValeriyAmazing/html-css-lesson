@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 7: Коробочки 📦</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e8f5e9;
+            /* Green 50 */
+            color: #1b5e20;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 5px solid #4caf50;
+        }
+
+        h1 {
+            color: #2e7d32;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        h2 {
+            color: #388e3c;
+            border-bottom: 2px dashed #388e3c;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .code-block {
+            background-color: #263238;
+            color: #eceff1;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1em;
+            margin: 20px 0;
+            border-left: 10px solid #8bc34a;
+        }
+
+        .selector {
+            color: #cddc39;
+        }
+
+        .prop {
+            color: #80cbc4;
+        }
+
+        .val {
+            color: #ffab91;
+        }
+
+        .box-demo {
+            border: 3px solid #f44336;
+            background-color: #ffcdd2;
+            display: inline-block;
+        }
+
+        .task {
+            background-color: #f1f8e9;
+            border: 2px solid #aed581;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📦 Урок 7: Коробочки</h1>
+
+        <p>В веб-дизайне всё — это коробочки (блоки). Заголовки, картинки, абзацы — всё это прямоугольники.</p>
+        <p>Иногда они слипаются, как пельмени. Давай научимся их раздвигать!</p>
+
+        <h2>1. Padding (Внутренний отступ)</h2>
+        <p>Представь, что ты упаковываешь подарок в коробку. Чтобы он не бился о стенки, ты кладешь вату или пупырку.
+        </p>
+        <p><b>Padding</b> — это расстояние от <u>текста</u> до <u>рамки</u> (border).</p>
+
+        <div class="box-demo">Без Padding</div>
+        <div class="box-demo" style="padding: 20px; margin-left: 20px;">С Padding 20px</div>
+
+        <div class="code-block">
+            <span class="selector">div</span> {<br>
+            &nbsp;&nbsp;<span class="prop">border</span>: <span class="val">2px solid red</span>;<br>
+            &nbsp;&nbsp;<span class="prop">padding</span>: <span class="val">20px</span>; /* Воздух внутри рамки */<br>
+            }
+        </div>
+
+        <h2>2. Margin (Внешний отступ)</h2>
+        <p>А теперь представь дома на улице. Если они стоят вплотную — это плохо. Нужно расстояние между ними.</p>
+        <p><b>Margin</b> — это расстояние <u>снаружи</u>, от рамки до соседа.</p>
+
+        <div style="background:orange; width: 100px; display:inline-block">Дом 1</div>
+        <div style="background:orange; width: 100px; display:inline-block">Дом 2</div>
+        <p><i>(Они слиплись!)</i></p>
+
+        <div style="background:orange; width: 100px; display:inline-block; margin-right: 30px;">Дом 1</div>
+        <div style="background:orange; width: 100px; display:inline-block">Дом 2</div>
+        <p><i>(Между ними margin!)</i></p>
+
+        <div class="code-block">
+            <span class="selector">div</span> {<br>
+            &nbsp;&nbsp;<span class="prop">margin</span>: <span class="val">30px</span>; /* Оттолкнуть всех соседей
+            */<br>
+            }
+        </div>
+
+        <h2>📏 Ширина и Высота</h2>
+        <p>Мы можем командовать размерами коробки:</p>
+        <ul>
+            <li><b>width</b> (Ширина)</li>
+            <li><b>height</b> (Высота)</li>
+        </ul>
+
+        <div class="task">
+            <h3>🚀 Твоё задание №7: Кубики</h3>
+            <p>1. Открой <b>Practice/Lesson_07/boxes.html</b>.</p>
+            <p>2. Там есть 3 коробки, которые выглядят некрасиво и слиплись.</p>
+            <p>3. Добавь им <b>padding: 20px</b>, чтобы тексту было свободно.</p>
+            <p>4. Добавь им <b>margin: 10px</b>, чтобы они разъехались.</p>
+            <p>5. Задай ширину <b>width: 200px</b>.</p>
+        </div>
+    </div>
+</body>
+
+</html>

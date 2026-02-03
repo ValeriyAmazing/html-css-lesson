@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 3: Картинки и Котики 🐱</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #e0f7fa;
+            color: #006064;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 5px solid #00bcd4;
+        }
+
+        h1 {
+            color: #00bcd4;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        h2 {
+            color: #0097a7;
+            border-bottom: 2px solid #b2ebf2;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .code-block {
+            background-color: #263238;
+            color: #eceff1;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1em;
+            overflow-x: auto;
+            margin: 20px 0;
+            border-left: 10px solid #ffc107;
+        }
+
+        .tag {
+            color: #80cbc4;
+        }
+
+        .attr {
+            color: #f48fb1;
+        }
+
+        .val {
+            color: #ce93d8;
+        }
+
+        .task {
+            background-color: #e1f5fe;
+            border: 2px solid #81d4fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📸 Урок 3: Картинки</h1>
+
+        <p>Сайт без картинок — как книга без иллюстраций. Скучно! Давай добавим красок.</p>
+
+        <h2>🖼️ Тег IMG</h2>
+        <p>Чтобы вставить картинку, нужен тег <b>&lt;img&gt;</b>. У него нет закрывающей пары! Он одиночка.</p>
+
+        <div class="code-block">
+            &lt;<span class="tag">img</span> <span class="attr">src</span>=<span class="val">"адрес_картинки.jpg"</span>
+            <span class="attr">alt</span>=<span class="val">"Описание"</span>&gt;
+        </div>
+
+        <h3>Атрибуты (Настройки картинки)</h3>
+        <ul>
+            <li><b>src</b> (Source) — "Откуда брать?". Это может быть ссылка из интернета или имя файла.</li>
+            <li><b>alt</b> (Alternative Text) — "Что тут нарисовано?". Если картинка сломается, появится этот текст. И
+                его читают программы для слепых людей.</li>
+            <li><b>width</b> — "Ширина". Можно задать размер, например, <code>width="200"</code>.</li>
+        </ul>
+
+        <h3>Пример котика с интернета:</h3>
+        <p>Попробуй вставить такую картинку:</p>
+        <div class="code-block">
+            &lt;<span class="tag">img</span> <span class="attr">src</span>=<span
+                class="val">"https://cataas.com/cat"</span> <span class="attr">width</span>=<span
+                class="val">"300"</span>&gt;
+        </div>
+
+        <p>Вот что получится (обнови страницу, чтобы увидеть другого котика):</p>
+        <img src="https://cataas.com/cat" width="300" alt="Случайный котик">
+
+        <div class="task">
+            <h3>🚀 Твоё задание №3: Профиль Героя</h3>
+            <p>1. Открой папку <b>Practice/Lesson_03</b>.</p>
+            <p>2. В файле <b>hero.html</b> создай анкету своего любимого героя.</p>
+            <p>3. Найди в Google Картинках изображение героя.</p>
+            <p>4. Нажми правой кнопкой мыши на картинку -> "Копировать URL картинки" (или "Копировать адрес
+                изображения").</p>
+            <p>5. Вставь тег <code>&lt;img&gt;</code> с этим адресом в <code>src</code>.</p>
+            <p>6. Не забудь задать ширину <code>width="300"</code>, чтобы он не был гигантским!</p>
+        </div>
+    </div>
+</body>
+
+</html>

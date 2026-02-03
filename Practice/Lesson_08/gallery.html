@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Моя Галерея</title>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .gallery {
+            border: 2px dashed white;
+            padding: 20px;
+
+            /* ЗАДАНИЕ:
+               1. Преврати этот блок во Flex-контейнер
+               display: flex;
+               
+               2. Сделай отступы между картинками
+               gap: 15px;
+               
+               3. Выровняй их по центру
+               justify-content: center;
+            */
+        }
+
+        .card {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Мои любимые места</h1>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="https://picsum.photos/200/150?random=1">
+            <p>Горы</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200/150?random=2">
+            <p>Море</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200/150?random=3">
+            <p>Лес</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

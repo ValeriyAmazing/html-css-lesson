@@ -1,0 +1,58 @@
+/* 
+   Это ГЛАВНЫЙ файл стилей.
+   Все, что ты напишешь здесь, применится ко ВСЕМ страницам (index.html и hobby.html).
+*/
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    text-align: center;
+}
+
+/* Стили для меню */
+.menu {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none; /* Без подчеркивания */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #ff5722; /* Оранжевый при наведении */
+}
+
+/* Стили для фото */
+.avatar {
+    width: 200px;
+    height: 200px; /* Чтобы был квадрат */
+    border-radius: 50%; /* Чтобы был круг */
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Стили для контента */
+.content {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto; /* По центру */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+h1 {
+    color: #3f51b5;
+}

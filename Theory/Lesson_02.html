@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 2: Магия текста и Списки</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            background-color: #fff0f5;
+            /* Lavender Blush */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 5px solid #ff69b4;
+            /* Hot Pink */
+        }
+
+        h1 {
+            color: #e91e63;
+            text-align: center;
+            font-size: 3em;
+            text-shadow: 2px 2px #ffc107;
+        }
+
+        h2 {
+            color: #9c27b0;
+            border-bottom: 2px dashed #9c27b0;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .code-block {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1em;
+            margin: 20px 0;
+            border-left: 10px solid #e91e63;
+        }
+
+        .tag {
+            color: #e06c75;
+        }
+
+        .attr {
+            color: #d19a66;
+        }
+
+        .val {
+            color: #98c379;
+        }
+
+        .example-box {
+            border: 3px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .task {
+            background-color: #e3f2fd;
+            border: 2px solid #2196f3;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>✨ Урок 2: Магия текста</h1>
+
+        <p>Дай пять! 🖐️ Ты уже умеешь создавать страницы. Теперь давай научимся их украшать и наводить порядок.</p>
+
+        <h2>💪 Жирный и <i>Курсив</i></h2>
+        <p>Иногда слово нужно выделить, чтобы оно кричало: "Посмотри на меня!".</p>
+
+        <ul>
+            <li><b>&lt;b&gt;ЖИРНЫЙ&lt;/b&gt;</b> — делает текст толстым, как медвежонок.</li>
+            <li><i>&lt;i&gt;Курсив&lt;/i&gt;</i> — наклоняет текст, как Пизанская башня.</li>
+        </ul>
+
+        <div class="code-block">
+            &lt;p&gt;Я люблю &lt;b&gt;мороженое&lt;/b&gt;, но не люблю <i>брокколи</i>.&lt;/p&gt;
+        </div>
+
+        <h2>📝 Списки: Порядок во всём</h2>
+        <p>Любишь составлять списки желаний или топы игр? В HTML это очень просто!</p>
+
+        <h3>1. Маркированный список (Точки) •</h3>
+        <p>Для списка покупок, где порядок не важен.</p>
+        <div class="code-block">
+            &lt;<span class="tag">ul</span>&gt; (Unordered List)<br>
+            &nbsp;&nbsp;&lt;<span class="tag">li</span>&gt;Масло&lt;/<span class="tag">li</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="tag">li</span>&gt;Хлеб&lt;/<span class="tag">li</span>&gt;<br>
+            &lt;/<span class="tag">ul</span>&gt;
+        </div>
+
+        <h3>2. Нумерованный список (Цифры) 1️⃣2️⃣3️⃣</h3>
+        <p>Для рейтинга победителей или рецепта.</p>
+        <div class="code-block">
+            &lt;<span class="tag">ol</span>&gt; (Ordered List)<br>
+            &nbsp;&nbsp;&lt;<span class="tag">li</span>&gt;Первое место: Я!&lt;/<span class="tag">li</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="tag">li</span>&gt;Второе место: Кот&lt;/<span class="tag">li</span>&gt;<br>
+            &lt;/<span class="tag">ol</span>&gt;
+        </div>
+
+        <p>Запомни: <b>&lt;li&gt;</b> (List Item) — это сам пункт списка. Он всегда живет внутри <b>ul</b> или
+            <b>ol</b>.</p>
+
+        <div class="task">
+            <h3>🚀 Твоё задание №2: Топ-3 Игры</h3>
+            <p>1. Открой папку <b>Practice/Lesson_02</b>.</p>
+            <p>2. В файле <b>top.html</b> создай заголовок "Мои любимые игры".</p>
+            <p>3. Сделай <b>Нумерованный список</b> (&lt;ol&gt;) из 3-х твоих любимых игр.</p>
+            <p>4. Самую любимую игру выдели <b>жирным</b> шрифтом!</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 1: Твоя первая веб-страница</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border: 5px solid #4facfe;
+        }
+        h1 {
+            color: #00f260;
+            background: linear-gradient(to right, #00f260, #0575e6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            font-size: 3em;
+        }
+        h2 {
+            color: #0575e6;
+            border-bottom: 2px dashed #0575e6;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .code-block {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1em;
+            overflow-x: auto;
+            margin: 20px 0;
+            border-left: 10px solid #f5a623;
+        }
+        .highlight {
+            color: #e06c75;
+            font-weight: bold;
+        }
+        .tag {
+            color: #61afef;
+        }
+        .task {
+            background-color: #fff3cd;
+            border: 2px solid #ffeeba;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .task h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .emoji {
+            font-size: 2em;
+            vertical-align: middle;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👋 Привет, будущий веб-мастер!</h1>
+        
+        <p>Добро пожаловать на твой первый урок! Сегодня мы узнаем, как создаются сайты, и даже напишем свой собственный.</p>
+        
+        <h2>🏠 Интернет — это как город</h2>
+        <p>Представь, что интернет — это огромный город 🏙️. В этом городе есть дома — это <b>Сайты</b>. А каждая комната в доме — это <b>Веб-страница</b>.</p>
+        <p>Чтобы построить дом, нам нужны кирпичи. В интернете такими кирпичиками служит язык <b>HTML</b>.</p>
+        
+        <h2>🏗️ Из чего состоит страница?</h2>
+        <p>Любая страница похожа на бутерброд или человечка. У неё есть "голова" и "тело".</p>
+        
+        <div class="code-block">
+            &lt;<span class="tag">html</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="tag">head</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;🧠 Здесь мысли сайта (настройки)<br>
+            &nbsp;&nbsp;&lt;/<span class="tag">head</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="tag">body</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;👕 А здесь то, что мы видим (текст, картинки)<br>
+            &nbsp;&nbsp;&lt;/<span class="tag">body</span>&gt;<br>
+            &lt;/<span class="tag">html</span>&gt;
+        </div>
+
+        <h2>🏷️ Что такое Теги?</h2>
+        <p>Команды в HTML называются <b>тегами</b>. Они пишутся в угловых скобках: <b>&lt;тег&gt;</b>.</p>
+        <p>Большинство тегов парные: есть открывающий <b>&lt;h1&gt;</b> и закрывающий <b>&lt;/h1&gt;</b> (со слэшем /).</p>
+        
+        <p>Давай выучим самые главные:</p>
+        <ul>
+            <li><b>&lt;h1&gt;</b> — Самый главный заголовок (название страницы).</li>
+            <li><b>&lt;p&gt;</b> — Абзац (простой текст).</li>
+        </ul>
+
+        <div class="task">
+            <h3>🚀 Твоё задание №1</h3>
+            <p>1. Открой папку <b>Practice/Lesson_01</b>.</p>
+            <p>2. Найди там файл <b>index.html</b> и открой его с помощью Блокнота или редактора кода.</p>
+            <p>3. Напиши внутри тега <code>&lt;body&gt;</code> свой заголовок <code>&lt;h1&gt;Привет, мир!&lt;/h1&gt;</code>.</p>
+            <p>4. Добавь ниже рассказ о себе в теге <code>&lt;p&gt;</code>.</p>
+            <p>5. Сохрани файл и открой его в браузере! 🎉</p>
+        </div>
+    </div>
+</body>
+</html>

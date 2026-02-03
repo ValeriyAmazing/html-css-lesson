@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 6: Шрифты и Рамки 🖼️</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #fff8e1;
+            /* Amber 50 */
+            color: #3e2723;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 5px solid #ff6f00;
+        }
+
+        h1 {
+            font-family: 'Comic Sans MS', cursive;
+            color: #ff6f00;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        h2 {
+            color: #bf360c;
+            border-bottom: 2px solid #bf360c;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .code-block {
+            background-color: #263238;
+            color: #eceff1;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1em;
+            margin: 20px 0;
+            border-left: 10px solid #ffca28;
+        }
+
+        .selector {
+            color: #ffca28;
+        }
+
+        .prop {
+            color: #80cbc4;
+        }
+
+        .val {
+            color: #ba68c8;
+        }
+
+        .demo-box {
+            padding: 20px;
+            margin: 10px 0;
+            background-color: #eee;
+            text-align: center;
+        }
+
+        .task {
+            background-color: #ffe0b2;
+            border: 2px solid #ff9800;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🅰️ Урок 6: Слова и Рамки</h1>
+
+        <p>Ты замечал, что в книгах буквы разные? Где-то строгие, где-то веселые. Мы тоже так умеем!</p>
+
+        <h2>✒️ Шрифт (Font)</h2>
+        <p>Чтобы изменить вид букв, используй <code>font-family</code> (семейство шрифтов).</p>
+
+        <div class="code-block">
+            <span class="selector">h1</span> {<br>
+            &nbsp;&nbsp;<span class="prop">font-family</span>: <span class="val">"Comic Sans MS"</span>, cursive;<br>
+            }
+        </div>
+
+        <p>А размер задается через <code>font-size</code> (в пикселях <b>px</b>).</p>
+        <div class="code-block">
+            <span class="selector">p</span> {<br>
+            &nbsp;&nbsp;<span class="prop">font-size</span>: <span class="val">20px</span>;<br>
+            }
+        </div>
+
+        <h2>🖼️ Границы (Border)</h2>
+        <p>Любую картинку или текст можно взять в рамочку. Для этого есть свойство <b>border</b>.</p>
+        <p>Оно состоит из 3 слов: <b>Толщина Тип Цвет</b>.</p>
+
+        <div class="code-block">
+            <span class="selector">img</span> {<br>
+            &nbsp;&nbsp;<span class="prop">border</span>: <span class="val">5px solid red</span>;<br>
+            }
+        </div>
+
+        <div class="demo-box" style="border: 5px solid red;">5px solid red (Сплошная)</div>
+        <div class="demo-box" style="border: 5px dashed blue;">5px dashed blue (Пунктир)</div>
+        <div class="demo-box" style="border: 5px dotted green;">5px dotted green (Точки)</div>
+
+        <h3>🟡 Скругление углов</h3>
+        <p>Хочешь мягкие углы? Используй <code>border-radius</code>.</p>
+        <div class="code-block">
+            <span class="selector">div</span> {<br>
+            &nbsp;&nbsp;<span class="prop">border-radius</span>: <span class="val">20px</span>;<br>
+            }
+        </div>
+        <div class="demo-box" style="border: 3px solid black; border-radius: 20px;">Я скругленный!</div>
+
+        <div class="task">
+            <h3>🚀 Твоё задание №6: Открытка</h3>
+            <p>1. Открой папку <b>Practice/Lesson_06</b>.</p>
+            <p>2. В файле <b>postcard.html</b> сделай заголовок "С Днем Рождения!" (или любой другой праздник).</p>
+            <p>3. Задай ему веселый шрифт (Comic Sans MS) и большой размер.</p>
+            <p>4. Добавь красивую рамку (border) вокруг текста поздравления.</p>
+            <p>5. Скругли углы рамки (border-radius).</p>
+        </div>
+    </div>
+</body>
+
+</html>

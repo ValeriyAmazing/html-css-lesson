@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 8: Флексы (Рядком) 🤸</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #fff3e0;
+            /* Orange 50 */
+            color: #e65100;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 5px solid #ff9800;
+        }
+
+        h1 {
+            color: #ef6c00;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        h2 {
+            color: #f57c00;
+            border-bottom: 2px solid #ffe0b2;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .code-block {
+            background-color: #3e2723;
+            color: #ffccbc;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1em;
+            margin: 20px 0;
+            border-left: 10px solid #ff5722;
+        }
+
+        .selector {
+            color: #ffab91;
+        }
+
+        .prop {
+            color: #80cbc4;
+        }
+
+        .val {
+            color: #ffeb3b;
+        }
+
+        .flex-demo {
+            display: flex;
+            background: #eee;
+            padding: 10px;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .flex-item {
+            background: #ff9800;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .task {
+            background-color: #fff8e1;
+            border: 2px solid #ffb74d;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🤸 Урок 8: Флексы</h1>
+
+        <p>Ты заметил, что блоки (div, h1, p) всегда встают друг под другом, как этажи в доме? А что если мы хотим
+            поставить их рядом, как вагоны поезда?</p>
+
+        <h2>🪄 Магическая фраза: display: flex</h2>
+        <p>Чтобы выстроить элементы в ряд, нужно их Родителю (коробке, в которой они лежат) сказать: "Будь гибким!"
+            (Flex).</p>
+
+        <div class="code-block">
+            <span class="selector">.roditel</span> {<br>
+            &nbsp;&nbsp;<span class="prop">display</span>: <span class="val">flex</span>;<br>
+            &nbsp;&nbsp;<span class="prop">gap</span>: <span class="val">20px</span>; /* Расстояние между детьми */<br>
+            }
+        </div>
+
+        <div class="flex-demo">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+
+        <h2>⚖️ Выравнивание (Justify)</h2>
+        <p>Когда элементы стоят в ряд, мы можем двигать их:</p>
+        <ul>
+            <li><b>justify-content: center;</b> — По центру.</li>
+            <li><b>justify-content: space-between;</b> — Раскидать по краям.</li>
+        </ul>
+
+        <div class="flex-demo" style="justify-content: center;">
+            <div class="flex-item">Center</div>
+            <div class="flex-item">Center</div>
+        </div>
+
+        <div class="flex-demo" style="justify-content: space-between;">
+            <div class="flex-item">Left</div>
+            <div class="flex-item">Right</div>
+        </div>
+
+        <div class="task">
+            <h3>🚀 Твоё задание №8: Галерея</h3>
+            <p>1. Открой <b>Practice/Lesson_08/gallery.html</b>.</p>
+            <p>2. Там есть блок <code>&lt;div class="gallery"&gt;</code>, внутри которого лежат 3 картинки.</p>
+            <p>3. В стилях найди <code>.gallery</code> и напиши <code>display: flex;</code>.</p>
+            <p>4. Добавь отступов между ними с помощью <code>gap: 20px;</code>.</p>
+            <p>5. Попробуй выровнять их по центру: <code>justify-content: center;</code>.</p>
+        </div>
+    </div>
+</body>
+
+</html>

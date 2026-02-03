@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 5: Мир Цвета (CSS) 🎨</title>
+    <style>
+        body {
+            font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+            background-color: #212121;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #333;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 5px solid #ffeb3b;
+        }
+
+        h1 {
+            color: #ffeb3b;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        h2 {
+            color: #03a9f4;
+            border-bottom: 2px solid #03a9f4;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        .code-block {
+            background-color: #000;
+            color: #0f0;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1em;
+            margin: 20px 0;
+            border-left: 10px solid #ff5722;
+        }
+
+        .selector {
+            color: #ffeb3b;
+        }
+
+        .prop {
+            color: #03a9f4;
+        }
+
+        .val {
+            color: #e91e63;
+        }
+
+        .task {
+            background-color: #424242;
+            border: 2px solid #ffeb3b;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎨 Урок 5: CSS — Это Стиль!</h1>
+
+        <p>Наш HTML-домик построен. Но он серый и скучный. Пришло время позвать маляра!</p>
+        <p><b>CSS</b> (Каскадные Таблицы Стилей) — это язык, который отвечает за красоту. Он говорит браузеру: "Сделай
+            этот заголовок красным!".</p>
+
+        <h2>🖌️ Где писать стили?</h2>
+        <p>Мы будем писать их в голове документа (внутри <code>&lt;head&gt;</code>) в специальном теге
+            <code>&lt;style&gt;</code>.</p>
+
+        <div class="code-block">
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&lt;title&gt;Мой сайт&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;style&gt;<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="selector">p</span> {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">color</span>: <span class="val">red</span>;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            <br>
+            &nbsp;&nbsp;&lt;/style&gt;<br>
+            &lt;/head&gt;
+        </div>
+
+        <h2>🌈 Цвета текста и фона</h2>
+        <p>Давай выучим две главные команды:</p>
+        <ul>
+            <li><b>color</b> — цвет букв.</li>
+            <li><b>background-color</b> — цвет фона.</li>
+        </ul>
+
+        <p>Цвета можно писать по-английски:</p>
+        <ul>
+            <li><span class="color-box" style="background:red"></span> <code>red</code> (Красный)</li>
+            <li><span class="color-box" style="background:blue"></span> <code>blue</code> (Синий)</li>
+            <li><span class="color-box" style="background:green"></span> <code>green</code> (Зеленый)</li>
+            <li><span class="color-box" style="background:gold"></span> <code>gold</code> (Золотой)</li>
+        </ul>
+
+        <div class="code-block">
+            <span class="selector">body</span> {<br>
+            &nbsp;&nbsp;<span class="prop">background-color</span>: <span class="val">black</span>; /* Фон всей страницы
+            */<br>
+            &nbsp;&nbsp;<span class="prop">color</span>: <span class="val">white</span>; /* Весь текст белый */<br>
+            }<br>
+            <br>
+            <span class="selector">h1</span> {<br>
+            &nbsp;&nbsp;<span class="prop">color</span>: <span class="val">gold</span>; /* А заголовок золотой! */<br>
+            }
+        </div>
+
+        <div class="task">
+            <h3>🚀 Твоё задание №5: Стиляга</h3>
+            <p>1. Открой папку <b>Practice/Lesson_05</b>.</p>
+            <p>2. Открой файл <b>style_me.html</b> (он скучный и белый).</p>
+            <p>3. Внутри <code>&lt;head&gt;</code> найди тег <code>&lt;style&gt;</code>.</p>
+            <p>4. Напиши туда код, чтобы сделать:</p>
+            <ul>
+                <li>Фон страницы (<code>body</code>) — черным или темно-синим.</li>
+                <li>Текст (<code>p</code>) — белым или желтым.</li>
+                <li>Заголовок — твой любимый цвет.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>🗺️ Карта Уроков: Путь Веб-Мастера</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            margin: 0;
+            padding: 40px;
+            color: #444;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border: 8px solid white;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px #fff;
+        }
+
+        p.subtitle {
+            text-align: center;
+            font-size: 1.3em;
+            color: #555;
+            margin-bottom: 50px;
+        }
+
+        .module {
+            margin-bottom: 40px;
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .module:hover {
+            transform: translateY(-5px);
+        }
+
+        .module-title {
+            color: #3f51b5;
+            border-bottom: 2px dashed #a5b1e6;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+
+        .lesson-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .lesson-link {
+            display: block;
+            background-color: #f1f8e9;
+            color: #33691e;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            border: 2px solid #dcedc8;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lesson-link:hover {
+            background-color: #76ff03;
+            color: #1b5e20;
+            box-shadow: 0 5px 15px rgba(118, 255, 3, 0.4);
+            transform: scale(1.02);
+            border-color: #76ff03;
+        }
+
+        .lesson-link::before {
+            content: "🚀";
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .lesson-link.final {
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            color: #c2185b;
+            border: none;
+        }
+
+        .lesson-link.final:hover {
+            box-shadow: 0 5px 20px rgba(255, 154, 158, 0.6);
+        }
+
+        .lesson-link.final::before {
+            content: "🏆";
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #555;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🗺️ Карта Приключений</h1>
+        <p class="subtitle">Твой путь от новичка до Веб-Мастера!</p>
+
+        <!-- Модуль 1 -->
+        <div class="module">
+            <h2 class="module-title">🏠 Модуль 1: Основы (Строим дом)</h2>
+            <ul class="lesson-list">
+                <li><a href="Theory/Lesson_01.html" class="lesson-link">Урок 1: Первая страница</a></li>
+                <li><a href="Theory/Lesson_02.html" class="lesson-link">Урок 2: Текст и Списки</a></li>
+                <li><a href="Theory/Lesson_03.html" class="lesson-link">Урок 3: Картинки</a></li>
+                <li><a href="Theory/Lesson_04.html" class="lesson-link">Урок 4: Ссылки</a></li>
+            </ul>
+        </div>
+
+        <!-- Модуль 2 -->
+        <div class="module">
+            <h2 class="module-title">🎨 Модуль 2: Дизайн (Красим стены)</h2>
+            <ul class="lesson-list">
+                <li><a href="Theory/Lesson_05.html" class="lesson-link">Урок 5: Цвета (CSS)</a></li>
+                <li><a href="Theory/Lesson_06.html" class="lesson-link">Урок 6: Шрифты и Рамки</a></li>
+                <li><a href="Theory/Lesson_07.html" class="lesson-link">Урок 7: Отступы (Box Model)</a></li>
+            </ul>
+        </div>
+
+        <!-- Модуль 3 -->
+        <div class="module">
+            <h2 class="module-title">🚀 Модуль 3: Мастерство (Оживляем)</h2>
+            <ul class="lesson-list">
+                <li><a href="Theory/Lesson_08.html" class="lesson-link">Урок 8: Расположение (Flex)</a></li>
+                <li><a href="Theory/Lesson_09.html" class="lesson-link">Урок 9: Кнопки и Наведение</a></li>
+                <li style="grid-column: 1 / -1; margin-top: 10px;">
+                    <a href="Theory/Lesson_10.html" class="lesson-link final">Урок 10: ФИНАЛЬНЫЙ ПРОЕКТ</a>
+                </li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>🌟 Открывай уроки по порядку и не забывай делать задания в папке <b>Practice</b>! 🌟</p>
+        </footer>
+    </div>
+</body>
+
+</html>

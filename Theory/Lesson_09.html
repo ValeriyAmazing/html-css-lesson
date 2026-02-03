@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 9: Кнопки и Наведение 👇</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e3f2fd;
+            /* Blue 50 */
+            color: #0d47a1;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 5px solid #2196f3;
+        }
+
+        h1 {
+            color: #1976d2;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        h2 {
+            color: #1565c0;
+            border-bottom: 2px solid #90caf9;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .code-block {
+            background-color: #263238;
+            color: #b0bec5;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1em;
+            margin: 20px 0;
+            border-left: 10px solid #03a9f4;
+        }
+
+        .selector {
+            color: #81d4fa;
+        }
+
+        .pseudo {
+            color: #ffeb3b;
+        }
+
+        .prop {
+            color: #80cbc4;
+        }
+
+        .val {
+            color: #f48fb1;
+        }
+
+        .btn-demo {
+            background-color: #2196f3;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-demo:hover {
+            background-color: #0d47a1;
+            transform: scale(1.1);
+        }
+
+        .task {
+            background-color: #e1f5fe;
+            border: 2px solid #29b6f6;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🖱️ Урок 9: Живые кнопки</h1>
+
+        <p>Сайт — это не просто картинка. Мы можем кликать и наводить мышку. Давай научим сайт реагировать на нас!</p>
+
+        <h2>✨ Псевдокласс :hover (Наведение)</h2>
+        <p>В CSS есть секретное состояние <b>:hover</b>. Оно включается только тогда, когда курсор мыши нависает над
+            элементом.</p>
+
+        <div class="code-block">
+            <span class="selector">button</span> {<br>
+            &nbsp;&nbsp;<span class="prop">background-color</span>: <span class="val">blue</span>;<br>
+            &nbsp;&nbsp;<span class="prop">color</span>: <span class="val">white</span>;<br>
+            }<br>
+            <br>
+            <span class="selector">button</span><span class="pseudo">:hover</span> {<br>
+            &nbsp;&nbsp;<span class="prop">background-color</span>: <span class="val">red</span>; /* Станет красной при
+            наведении! */<br>
+            &nbsp;&nbsp;<span class="prop">cursor</span>: <span class="val">pointer</span>; /* Курсор станет пальчиком
+            */<br>
+            }
+        </div>
+
+        <h3>Попробуй навести мышку сюда:</h3>
+        <a href="#" class="btn-demo">Наведи на меня!</a>
+
+        <h2>👆 Курсор (Cursor)</h2>
+        <p>Чтобы пользователь понял, что сюда можно нажать, мы меняем стрелочку на пальчик:
+            <code>cursor: pointer;</code>.</p>
+
+        <div class="task">
+            <h3>🚀 Твоё задание №9: Игровое Меню</h3>
+            <p>1. Открой <b>Practice/Lesson_09/menu.html</b>.</p>
+            <p>2. Там есть ссылки в меню. Они скучные.</p>
+            <p>3. В CSS найди блок для <code>a:hover</code> (ссылка при наведении).</p>
+            <p>4. Измени цвет фона и цвет текста при наведении.</p>
+            <p>5. Добавь <code>transform: scale(1.1);</code>, чтобы кнопка немного увеличивалась.</p>
+        </div>
+    </div>
+</body>
+
+</html>
